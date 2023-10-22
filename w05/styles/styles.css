@@ -1,0 +1,24 @@
+img {
+    width: 200px;
+    border: 25px;
+    border-width: 20cap;
+    border-color:lightslategray ;
+}
+body {
+    text-align: center;
+    display: block;
+    border: 2px;
+    border-color: dimgrey;
+    border-style: solid;
+}
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+h4{
+    text-align: right;
+}
+div {
+    padding: 25;
+    color: dimgray;
+}

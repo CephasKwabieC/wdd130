@@ -34,8 +34,9 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 4em;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 img {
   display: block;
@@ -59,6 +60,7 @@ header {
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
