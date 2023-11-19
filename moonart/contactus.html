@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        form li + li {
+            margin-top: 1em;
+        }
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            font: 1em san-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus {
+            border-color: #000;
+        }
+        textarea {
+            vertical-align: top;
+            height: 5em;
+        }
+        .button {
+            padding-left: 90px;
+        }
+        button {
+            margin-left: 0.5em;
+        }
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            display: none;
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html"
+                <img class="logo" src="./images/moonartlogo.jpg" alt="Moon-Art Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="site-plan.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="./images/moonartlogo.jpg" alt="Moon-Art logo">
+        </div>
+
+    <h3>Contact Us</h3>
+    <p>
+        Thank you for your interest in our design services. We value your feedback, inquiries, and collaboration opportunities. To get in touch with us, here are our contact details:
+
+        Our dedicated team is available to assist you during our business hours, which are [Insert business hours]. You can reach out to us via phone or email, and we will respond to your queries as soon as possible.
+
+        Alternatively, you can also visit our office located at [Insert physical address]. Please note that visits to our office are by appointment only, so we recommend contacting us beforehand to schedule a meeting.
+
+        We understand the importance of effective communication, and we are committed to providing excellent customer service. Whether you have questions about our services, want to discuss a project, or need assistance with an ongoing design project, we are here to help. Our team is friendly, knowledgeable, and always ready to provide the support you need.
+
+        In addition to our direct contact information, you can also connect with us on social media platforms such as Facebook, Twitter, and Instagram. Follow our pages to stay updated with our latest projects, design tips, and industry insights.
+
+        We value your trust and privacy. Rest assured that any information you provide us will be treated confidentially and used solely for the purpose of assisting you with your design needs.
+
+        Thank you again for considering our services. We look forward to hearing from you and working together to bring your design ideas to life.
+    </p>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="./images/IMG_20211123_101556.jpg" alt="Moon-Art logo">
+        </div>
+
+        <section id="hero-msg">
+            <h3 class="home-title">Please contact us by filling out the required fields</h3>
+
+            </div>
+        </section>
+    </div>
+    <div id="feedback"></div>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name"/>
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email"/>
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+    </form>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="./images/flyer.jpg" alt="Moon-Art logo">
+        </div>
+
+    <main>
+    </main>
+    <footer>
+        <p>Moon-Art Design &copy; 2023 - Cephas Kwabie</p>
+        <p><a href="Site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="SOCIAL">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const feedbackElement = document.getElementById('feedback');
+        const formElement = document.forms[0];
+        formElement.addEventListener('submit', function(e){
+            e.preventDefault();
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.style.display = "block";
+            document.body.classList.toggle('moveDown');
+        })
+    </script>
+</body>
+</html>
