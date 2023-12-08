@@ -49,6 +49,7 @@ p {
 }
 
 footer {
+    display: grid;
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -149,7 +150,37 @@ input[type=text] {
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
 }
-.shelter-card, .spiral-card, .flower-card, .flyer-card,.moonart-card, .cherry-card{
+.shelter-card, .spiral-card, .flower-card, .flyer-card,.moonart-card, .cherry-card {
     width: 100%;
     height: auto;
+}
+/* Contact Us css */
+
+
+#feedback, form {
+    width: 40%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+}
+input, textarea {
+    width: 50%;
+    padding: 5px;
+}
+.image-container {
+    display: flex;
+    padding: auto;
+    gap: 20px;
+}
+.image-container img {
+    width: 50%;
+    height:500px ;
 }

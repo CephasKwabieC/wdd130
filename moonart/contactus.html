@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <style>
         form {
             margin: 0 auto;
@@ -76,60 +76,54 @@
         <div id="hero-box">
             <img id="hero-img" src="./images/moonartlogo.jpg" alt="Moon-Art logo">
         </div>
+    <div class="content-wrapper">
+        <div class="text-content">
+            <p>
+            <h3>Contact Us</h3>
+            
+                Thank you for your interest in our design services. We value your feedback, inquiries, and collaboration opportunities. To get in touch with us, here are our contact details:
 
-    <h3>Contact Us</h3>
-    <p>
-        Thank you for your interest in our design services. We value your feedback, inquiries, and collaboration opportunities. To get in touch with us, here are our contact details:
+                Our dedicated team is available to assist you during our business hours, which are [Insert business hours]. You can reach out to us via phone or email, and we will respond to your queries as soon as possible.
 
-        Our dedicated team is available to assist you during our business hours, which are [Insert business hours]. You can reach out to us via phone or email, and we will respond to your queries as soon as possible.
+                Alternatively, you can also visit our office located at [Insert physical address]. Please note that visits to our office are by appointment only, so we recommend contacting us beforehand to schedule a meeting.
 
-        Alternatively, you can also visit our office located at [Insert physical address]. Please note that visits to our office are by appointment only, so we recommend contacting us beforehand to schedule a meeting.
+                We understand the importance of effective communication, and we are committed to providing excellent customer service. Whether you have questions about our services, want to discuss a project, or need assistance with an ongoing design project, we are here to help. Our team is friendly, knowledgeable, and always ready to provide the support you need.
 
-        We understand the importance of effective communication, and we are committed to providing excellent customer service. Whether you have questions about our services, want to discuss a project, or need assistance with an ongoing design project, we are here to help. Our team is friendly, knowledgeable, and always ready to provide the support you need.
+                In addition to our direct contact information, you can also connect with us on social media platforms such as Facebook, Twitter, and Instagram. Follow our pages to stay updated with our latest projects, design tips, and industry insights.
 
-        In addition to our direct contact information, you can also connect with us on social media platforms such as Facebook, Twitter, and Instagram. Follow our pages to stay updated with our latest projects, design tips, and industry insights.
+                We value your trust and privacy. Rest assured that any information you provide us will be treated confidentially and used solely for the purpose of assisting you with your design needs.
 
-        We value your trust and privacy. Rest assured that any information you provide us will be treated confidentially and used solely for the purpose of assisting you with your design needs.
-
-        Thank you again for considering our services. We look forward to hearing from you and working together to bring your design ideas to life.
-    </p>
-
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="./images/IMG_20211123_101556.jpg" alt="Moon-Art logo">
+                Thank you again for considering our services. We look forward to hearing from you and working together to bring your design ideas to life.
+            </p>
         </div>
 
-        <section id="hero-msg">
-            <h3 class="home-title">Please contact us by filling out the required fields</h3>
-
+            <div class="image-container">
+                <img src="./images/IMG_20211123_101556.jpg" alt="image"          style="width:100%">
+                <img src="./images/flyer.jpg" alt="flyer" style="width:100%">
             </div>
-        </section>
-    </div>
-    <div id="feedback"></div>
-    <form action="/my-handling-form-page" method="post">
-        <ul>
-            <li>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="user_name"/>
-            </li>
-            <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email"/>
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li class="button">
-                <button type="submit">Send your message</button>
-            </li>
-        </ul>
+        
+        <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name"/>
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email"/>
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
     </form>
 
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="./images/flyer.jpg" alt="Moon-Art logo">
-        </div>
+    
 
     <main>
     </main>
@@ -151,7 +145,7 @@
     </footer>
     </div>
     <script>
-        const feedbackElement = document.getElementById('feedback');
+        const feedbackElement = document.getElementById('feedback'); 
         const formElement = document.forms[0];
         formElement.addEventListener('submit', function(e){
             e.preventDefault();
